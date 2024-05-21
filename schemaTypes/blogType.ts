@@ -6,8 +6,9 @@ export const blogType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
+      name: 'title',
       type: 'string',
+      title: 'Title',
     }),
   ],
 })
