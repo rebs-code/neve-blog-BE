@@ -16,6 +16,8 @@ export const blogType = defineType({
       title: 'Slug',
       validation: (rule) => rule.required().error(`Required to generate a page on the website`),
       hidden: ({document}) => !document?.title,
+      description:
+        'This is the URL path for the blog post. It can be automatically generated from the title.',
       options: {
         source: 'title',
       },

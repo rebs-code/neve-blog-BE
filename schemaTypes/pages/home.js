@@ -16,9 +16,6 @@ export default {
             type: 'array',
             of: [
                 {
-                    type: 'hero',
-                },
-                {
                     type: 'jumbotron',
                 },
             ],

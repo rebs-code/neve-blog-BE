@@ -6,9 +6,9 @@ import { media } from 'sanity-plugin-media'
 
 export default defineConfig({
   name: 'default',
-  title: 'astro-sanity',
+  title: 'astro-neve-blog-BE',
 
-  projectId: 'bno79kb2',
+  projectId: 'cpcy2oar',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool(), media()],
