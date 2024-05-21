@@ -10,5 +10,20 @@ export const blogType = defineType({
       type: 'string',
       title: 'Title',
     }),
+    defineField({
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      validation: (rule) => rule.required().error(`Required to generate a page on the website`),
+      hidden: ({document}) => !document?.title,
+      options: {
+        source: 'title',
+      },
+    }),
+    defineField({
+      name: 'subtitle',
+      type: 'string',
+      title: 'Subtitle',
+    }),
   ],
 })
