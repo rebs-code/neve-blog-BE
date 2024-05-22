@@ -28,6 +28,19 @@ export const blogType = defineType({
       title: 'Subtitle',
     }),
     defineField({
+      name: 'author',
+      type: 'string',
+      title: 'Author',
+    }),
+    defineField({
+      name: 'publishedAt',
+      type: 'datetime',
+      title: 'Published at',
+      options: {
+        getCurrentTime: () => new Date().toISOString(),
+      },
+    }),
+    defineField({
       name: 'image',
       type: 'customImage',
       title: 'Image',
