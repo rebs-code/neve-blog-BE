@@ -18,6 +18,9 @@ export default {
                 {
                     type: 'jumbotron',
                 },
+                {
+                    type: 'postList',
+                },
             ],
         },
     ],
