@@ -4,6 +4,8 @@ import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemaTypes'
 import { media } from 'sanity-plugin-media'
 
+
+
 export default defineConfig({
   name: 'default',
   title: 'astro-neve-blog-BE',
